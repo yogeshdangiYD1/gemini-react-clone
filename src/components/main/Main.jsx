@@ -4,7 +4,7 @@ import { useRef, useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export default function Main() {
-  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+  const apiKey = import.meta.env.GEMINI_API_KEY;
   const [content, setContent] = useState("");
   const [image, setImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
